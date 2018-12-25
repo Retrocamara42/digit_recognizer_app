@@ -44,7 +44,7 @@ class Paint(object):
             self.canvas.create_line(self.old_x, self.old_y, event.x, event.y, width=3, fill=self.color, capstyle=ROUND, smooth=TRUE, splinesteps=48)
 
         if self.old_x and self.old_y:
-            self.draw.line((self.old_x, self.old_y, event.x, event.y), width=8, fill=self.color)
+            self.draw.line((self.old_x, self.old_y, event.x, event.y), width=2, fill=self.color)
 
         self.old_x = event.x
         self.old_y = event.y
