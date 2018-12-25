@@ -1,2 +1,2 @@
 # digit_recognizer_app
-Implementation for a digit recognizer based in deep learning
+Write the number in a board, then the classifier will show you the number which was written.
