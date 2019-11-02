@@ -1,0 +1,4 @@
+/input/*.jpg
+/model/*.h5
+/model/*.json
+/src/__pycache__/*

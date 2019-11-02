@@ -24,12 +24,8 @@ class DigitRecognizer(object):
         json_file.close()
         self.model = model_from_json(loaded_model_json)
         self.model.load_weights("./model/model_digit.h5")
+        
 
-        print("Compiling...")
-        self.model.compile(
-                    loss=keras.losses.categorical_crossentropy,
-                    optimizer='adam',
-                    metrics=['accuracy'])
 
     def predicting(self):
         # Loading data input

@@ -1,4 +1,4 @@
-# Class for making drawings like in paint
+# Class for making drawings on a virtual whiteboard
 # Based on https://gist.github.com/nikhilkumarsingh/85501ee2c3d8c0cfa9d1a27be5781f06
 
 from tkinter import *
@@ -42,8 +42,6 @@ class Paint(object):
     def paint(self, event):
         if self.old_x and self.old_y:
             self.canvas.create_line(self.old_x, self.old_y, event.x, event.y, width=3, fill=self.color, capstyle=ROUND, smooth=TRUE, splinesteps=48)
-
-        if self.old_x and self.old_y:
             self.draw.line((self.old_x, self.old_y, event.x, event.y), width=3, fill=self.color)
 
         self.old_x = event.x
